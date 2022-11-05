@@ -18,7 +18,9 @@ export default function Form() {
       <LoginOption name='Google' />
       <LoginOption name='Apple' />
       <LoginOption name='Facebook' />
-      <p>Don't you have an account <span>Request Now</span></p>
+      <p>
+        Don't you have an account <span>Request Now!!</span>
+      </p>
     </div>
   )
 }
