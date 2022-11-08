@@ -1,6 +1,10 @@
 import LoginOption from '../LoginOption/LoginOption'
+import { data } from '../LoginOption/loginData'
 
 export default function Form() {
+  const loginMap = data.map((name) => {
+    return <LoginOption name={name} />
+  })
   return (
     <div className='form'>
       <form action=''>
@@ -15,9 +19,7 @@ export default function Form() {
         <input type='button' value='Sign in' />
       </form>
       <p>--Or Sign in with --</p>
-      <LoginOption name='Google' />
-      <LoginOption name='Apple' />
-      <LoginOption name='Facebook' />
+      {loginMap}
       <p>
         Don't you have an account <span>Request Now!!</span>
       </p>
